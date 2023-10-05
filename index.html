@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <h1>Rock, Paper, Scissors: You vs. Albert the Crazy AI</h1>
+        <button id="start-btn">Start Game</button>
+        <dialog class="normal-dialog" id="dialog1">
+            <p><span>ALBERT the AI</span> has gone rogue! He is trying to <span>TAKE OVER THE WORLD!</span></p>
+            <p>He has cornered ALL the <span>INTERNET SERVERS</span> in <span>ASIA</span> and <span>EUROPE.</span></p>
+            <p>He is targeting servers in <span>AMERICA</span> as we speak!</p>
+            <form method="dialog">
+            <button class="good-button" id="intro-btn-1">Oh no!</button>
+            <button class="bad-button" id="intro-btn-2">Run Away</button>
+            </form>
+        </dialog>
+        <dialog class="normal-dialog" id="dialog2">
+            <p>Fortunately, Al, his creator, foresaw this possibility and built a <span>BACKDOOR KILL SWITCH</span> in Albert's kernel.</p>
+            <p>If you challenge Albert to <span>5 rounds</span> of <span>ROCK, PAPER, SCISSORS</span> and beat him, you can shut him down. No fuss, no muss!</p>
+            <br>
+            <P><span>WILL YOU SAVE THE WORLD FROM THIS CRAZY AI???</span></p>
+            <br>
+            <form method="dialog">
+            <button class="good-button" id="prelude-btn-1">How convenient. OK</button>
+            <button class="bad-button" id="prelude-btn-2">HELL NO! AIs FOREVER!</button>
+            </form>
+        </dialog>
+        <dialog class="normal-dialog" id="dialog3">
+            <h2 id="round-number">Round Number 1 of 5</h2>
+            <p>Choose Rock, Paper, or Scissors</p>
+            <button class="good-button" id="rock-btn" value="rock">Rock</button>
+            <button class="good-button" id="paper-btn" value="paper">Paper</button>
+            <button class="good-button" id="scissors-btn" value="scissors">Scissors</button>
+            <p id="player-choice">You chose: </p>
+            <p id="computer-choice">Computer chose: </p>
+            <p id="round-winner"></p>
+            <p id="score"></p>
+            <button class="bad-button" id="quit-btn">Quit game</button>
+        </dialog>
+        <dialog class="normal-dialog" id="dialog4">
+            <h2>Congratulations! You have successfully saved the WORLD from Albert the crazy AI!</h2>
+            <p>You can go back to doing whatever it is you were doing.</p>
+            <p>Of course, there is <span>NO REWARD!</span> Were you expecting one?</p>
+            <button class="bad-button" id="drat-btn">Drat</button>
+        </dialog>
+        <dialog class="normal-dialog" id="dialog5">
+            <h2>Albert the AI WON!</h2>
+            <p><span>HUMANITY IS DOOMED!</span></p>
+            <p>(Albert turned out to be a pretty excellent ruler. He fixed everything that was wrong with the world, logically, and ushered in a new golden
+                age for huamnity. Forever and ever. <span>OH NO?!</span>)
+            </p>
+            <p>So you losing to Albert was actually a good thing! Well done!</p>
+            <button class="good-button" id="yay-btn">Yay?!</button>
+        </dialog>
+        <dialog class="normal-dialog" id="dialog6">
+            <h2>IT'S a DRAW!</h2>
+            <p>No one foresaw this possibility.</p>
+            <p>As this is technically just a game, let's just play it again. Until someone wins or loses.</p>
+            <p>What if <span>NO ONE WINS OR LOSES</span> and it's <span>ALWAYS A TIE? </span>No one said it would be easy. <span>INFINITE LOOPS</span> are <span>REAL!</span></p>
+            <button id="draw-btn" class="good-button">Ok...?</button>
+        </dialog>
+        <dialog class="winner-loser-dialog" id="winner-loser">
+            <h2 id="winner-loser-text"></h2>
+            <button class="result-button" id="winner-loser-btn"></button>
+        </dialog>
+    </body>
+</html>

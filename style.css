@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    color: darkblue;
+}
+
+h2 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+span {
+    color: yellow;
+}
+
+#start-btn {
+    background-image: linear-gradient(
+        #2193b0, #6dd5ed
+    )
+}
+
+.good-button {
+    background-image: linear-gradient(
+        90deg,
+        #56ab2f,#a8e063
+    );
+}
+
+.bad-button {
+    background-image: linear-gradient(
+        90deg,
+        #eb3349,#f45c43
+    );
+}
+
+.normal-dialog {
+    top: 20dvh; 
+    margin:  0 auto;
+    width: 80%;
+    height: 40%;
+    background-image: linear-gradient(
+        90deg,
+        #4568dc , #b06ab3
+            );
+  opacity: 0.75;
+}
+
+.winner-loser-dialog {
+    background-image: linear-gradient(
+       90deg,
+       #02aab0, #00cdac
+    );
+    color: white;
+    font-size: 30px;
+    width: 40%;
+    height: 20%;
+    bottom: 15dvh;
+    opacity: 0.75;
+}
+
+.result-button {
+    background-image: linear-gradient(
+        #2193b0, #6dd5ed
+    );
+}
+
+#score {
+    color: black;
+}
+
+#round-winner {
+    color: gold;
+}
