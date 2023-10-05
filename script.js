@@ -125,9 +125,11 @@ function startGame (choice) {
             return;
             }
             else 
+            {
             winnerLoser.showModal();
             winnerLoserText.innerHTML = ("IT'S A DRAW");
             winnerLoserButton.innerHTML = ("OK!");
+            }
         }
 }
 
@@ -184,10 +186,12 @@ scissorsButton.addEventListener("mousedown", () => {
 winnerLoserButton.addEventListener("click", () => {
     dialog3.close();
     winnerLoser.close();
-    if (score_player>score_computer)
-    dialog4.showModal();
-    else 
+    if (score_player === score_computer)
+    dialog6.showModal();
+    else if (score_computer>score_player)
     dialog5.showModal();
+    else 
+    dialog4.showModal();
 })
 
 dratButton.addEventListener ("click", () => {
