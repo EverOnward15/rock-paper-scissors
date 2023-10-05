@@ -155,6 +155,14 @@ introButton1.addEventListener("click", () => {
 
 introButton2.addEventListener("click", () => {
     dialog1.close();
+    current_round = 1;
+    playerChoice.innerHTML = (``);
+    computerChoice.innerHTML = (``);
+    score.innerHTML = (``);
+    roundWinner.innerHTML = ("");
+    score_player = 0;
+    score_computer = 1;
+    roundNumber.innerHTML = `Round Number 1 of 5`;
     winnerLoser.showModal();
     winnerLoserText.innerHTML = ("YOU LOST!");
     winnerLoserButton.innerHTML = ("OH NO!!");
@@ -168,6 +176,14 @@ preludeButton1.addEventListener("click", () => {
 
 preludeButton2.addEventListener("click",() => {
     dialog2.close();
+    current_round = 1;
+    playerChoice.innerHTML = (``);
+    computerChoice.innerHTML = (``);
+    score.innerHTML = (``);
+    roundWinner.innerHTML = ("");
+    score_player = 0;
+    score_computer = 1;
+    roundNumber.innerHTML = `Round Number 1 of 5`;
     winnerLoser.showModal();
     winnerLoserText.innerHTML = ("YOU LOST!");
     winnerLoserButton.innerHTML = ("OH NO!!");
@@ -216,8 +232,16 @@ drawButton.addEventListener ("click", () => {
 })
 
 quitButton.addEventListener("click", () => {
+    current_round = 1;
+    playerChoice.innerHTML = (``);
+    computerChoice.innerHTML = (``);
+    score.innerHTML = (``);
+    roundWinner.innerHTML = ("");
+    score_player = 0;
+    score_computer = 1;
+    roundNumber.innerHTML = `Round Number 1 of 5`;
     winnerLoser.showModal();
     winnerLoserText.innerHTML = ("YOU LOST!");
-    winnerLoserText.innerHTML = ("OH NO!!");
+    winnerLoserButton.innerHTML = ("OH NO!!");
 })
 
