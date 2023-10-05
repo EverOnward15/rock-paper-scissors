@@ -74,7 +74,7 @@ function singleRound (playerSelection, computerSelection) {
     }
     else if (playerSelection == "scissors" && computerSelection == "rock")
     {
-        score_computer;
+        ++score_computer;
         roundWinner.innerHTML = ("Rock beats scissors! Computer wins this round!");
         return;
     }
@@ -187,11 +187,17 @@ winnerLoserButton.addEventListener("click", () => {
     dialog3.close();
     winnerLoser.close();
     if (score_player === score_computer)
+    {
     dialog6.showModal();
+    }
     else if (score_computer>score_player)
+    {
     dialog5.showModal();
+    }
     else 
+    {
     dialog4.showModal();
+    }
 })
 
 dratButton.addEventListener ("click", () => {
