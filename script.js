@@ -45,37 +45,37 @@ function singleRound (playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "paper" )
     {
         ++score_computer;
-        roundWinner.innerHTML = ("Paper beats rock! Computer wins this round!");
+        roundWinner.innerHTML = ("Paper beats rock! Albert wins this round!");
          return;
     }
     else if (playerSelection == "rock" && computerSelection == "scissors")
     {   
         ++score_player;
-        roundWinner.innerHTML = ("Paper beats scissors! Player wins this round!");
+        roundWinner.innerHTML = ("Paper beats scissors! You wins this round!");
         return;
     }
     else if (playerSelection == "paper" && computerSelection == "rock")
     {
         ++score_player;
-        roundWinner.innerHTML = ("Paper beats rock! Player wins this round!");
+        roundWinner.innerHTML = ("Paper beats rock! You win this round!");
         return;
     }
     else if (playerSelection == "paper" && computerSelection == "scissors")
     {
         ++score_computer;
-        roundWinner.innerHTML = ("Scissors beat paper! Computer wins this round!");
+        roundWinner.innerHTML = ("Scissors beat paper! Albert wins this round!");
         return;
     }
     else if (playerSelection == "scissors" && computerSelection == "paper")
     {
         ++score_player;
-        roundWinner.innerHTML = ("Scissors beat paper! Player wins this round!");
+        roundWinner.innerHTML = ("Scissors beat paper! You wins this round!");
         return;
     }
     else if (playerSelection == "scissors" && computerSelection == "rock")
     {
         ++score_computer;
-        roundWinner.innerHTML = ("Rock beats scissors! Computer wins this round!");
+        roundWinner.innerHTML = ("Rock beats scissors! Albert wins this round!");
         return;
     }
 
@@ -91,9 +91,9 @@ function startGame (choice) {
         playerSelection = choice;
         playerChoice.innerHTML = `You chose ${choice}!`;
         computerSelection = computerPlay();
-        computerChoice.innerHTML = `Computer chose ${computerSelection}!`;
+        computerChoice.innerHTML = `Albert chose ${computerSelection}!`;
         singleRound(playerSelection, computerSelection);
-        score.innerHTML = (`Player score: ${score_player} <br> Computer score: ${score_computer}`);
+        score.innerHTML = (`Your score: ${score_player} <br> Albert's score: ${score_computer}`);
     //     // for(let i = 0; i < 5; i++) {
     //     // playerSelection = prompt ("Enter rock, paper, or scissors!");
     //     // playerSelection = playerSelection.toLowerCase();
