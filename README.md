@@ -1,3 +1,3 @@
 # rock-paper-scissors
-A rock-papers-scissors game app with vanilla HTML, CSS, and JS. 
+A rock-papers-scissors game created with HTML,CSS and vanilla JavaScript
 Hosted (live) here: https://everonward15.github.io/rock-paper-scissors/
